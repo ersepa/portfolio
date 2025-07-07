@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Grid+Double:wght@100..900&family=Libertinus+Mono&family=Matangi:wght@300..900&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        #navbar {
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            right: 0;
+            top: -8px;
+        }
+
+        .navbar-brand {
+            display: flex;
+            gap: 2rem;
+            text-align: center;
+            align-items: center;
+        }
+
+        .container-fluid {
+            display: flex;
+            background-color: rgb(211, 211, 211);
+            padding: 0.4rem;
+        }
+
+        .container-fluid img {
+            border-radius: 50%;
+            margin-left: 1rem;
+        }
+
+        .container-fluid p {
+            font-family: "zen dots", sans-serif;
+            font-size: 1.4rem;
+        }
+
+        .container-nav {
+            display: flex;
+            position: relative;
+            gap: 6rem;
+            align-items: center;
+            text-align: center;
+            right: 3rem;
+        }
+
+        .container-nav i {
+            font-size: 1.6rem;
+            color: black;
+            transition: 0.3s ease-in-out;
+        }
+
+        .container-nav i:hover {
+            color: rgb(105, 104, 104);
+        }
+
+        .btn-group {
+            right: 3rem;
+        }
+
+        #button {
+            font-family: "libertinus mono", sans-serif;
+        }
+
+        .dropdown-menu li {
+            font-family: "bebas neue", sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .judul p {
+            text-align: left;
+        }
+
+        .judul p:nth-child(2) {
+            font-size: 0.7em;
+        }
+
+        .name {
+            color: red;
+            letter-spacing: 2px;
+            margin-left: 0.4em;
+            font-weight: bold;
+        }
+
+        .container {
+            margin-top: 40vh;
+            text-align: center;
+        }
+    </style>
+
+    <title>Portofolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light" id="navbar">
+        <div class="container-fluid">
+            <div class="navbar-brand" href="#">
+                <img src="img/rio.jpg" alt="" width="90" height="90" class="d-inline-block align-text-center">
+                <div class="judul">
+                    <p>My Portofolio</p>
+                    <p>By <span class="name">Rio Sheva Pratama</span></p>
+                </div>
+            </div>
+            <div class="container-nav">
+                <a class="nav-link active" aria-current="page" href="#" id="home"><i class="bi bi-house"></i></a>
+                <a class="nav-link active" aria-current="page" href="#" id="home"><i class="bi bi-person"></i></a>
+                <a class="nav-link active" aria-current="page" href="#" id="home"><i class="bi bi-chat"></i></a>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger" id="button">Social Media</button>
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#"><span class="bi bi-github"></span> Git Hub</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Rio Sheva Pratama</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>
