@@ -21,6 +21,9 @@
 
             #container {
                 height: 9dvh;
+                justify-content: center;
+                text-align: center;
+                align-content: center;
             }
 
             nav {
@@ -48,6 +51,10 @@
             #nav-img {
                 visibility: hidden;
                 display: none;
+            }
+
+            #dropdownMenu a {
+                font-size: 12px;
             }
         }
 
@@ -107,7 +114,7 @@
             <div id="dropdown" class="content-center relative">
                 <div id="dropdown-button" class="flex bg-blue-400 rounded-lg">
                     <h1 id="menu" class="font-semibold font-(family-name:--sub-font) tracking-[0.1em] transition duration-500 ease-in-out hover:bg-blue-700 
-                        content-center px-2 rounded-lg rounded-r-none">
+                        content-center px-2 rounded-lg rounded-r-none text-center justify-center">
                         MENU
                     </h1>
                     <span id="dropdownButton"
@@ -115,13 +122,13 @@
                 </div>
                 <div id="dropdownMenu"
                     class="hidden absolute bg-white mt-1 rounded-lg w-full outline-1 text-center tracking-[0.1em] font-medium">
-                    <li class="list-none p-3 font-(family-name:--atc-font) hover:bg-gray-600 rounded-b-none rounded-lg">
-                        <a href="#"></a>Home
+                    <li class="list-none p-2 font-(family-name:--atc-font) hover:bg-gray-600 rounded-b-none rounded-lg">
+                        <a href="#">Home</a>
                     </li>
-                    <li class="outline font-(family-name:--atc-font) list-none p-3 hover:bg-gray-600"><a
-                            href="#"></a>About</li>
-                    <li class="font-(family-name:--atc-font) list-none p-3 hover:bg-gray-600 rounded-t-none rounded-lg">
-                        <a href="#"></a>Contact
+                    <li class="outline font-(family-name:--atc-font) list-none p-2 hover:bg-gray-600"><a
+                            href="#">About</a></li>
+                    <li class="font-(family-name:--atc-font) list-none p-2 hover:bg-gray-600 rounded-t-none rounded-lg">
+                        <a href="#">Contact</a>
                     </li>
                 </div>
             </div>
