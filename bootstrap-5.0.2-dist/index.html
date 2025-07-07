@@ -13,6 +13,65 @@
         rel="stylesheet">
     <title>Portofolio Tailwind</title>
     <style>
+        @media screen and (min-width:320px) and (max-width: 768px) {
+            #nav-link {
+                visibility: hidden;
+                display: none;
+            }
+
+            #dropdown h1,
+            span {
+                font-size: 10px;
+            }
+
+            #dropdown {
+                visibility: visible;
+            }
+
+            #judul {
+                padding-right: 25dvh;
+                font-size: 10px;
+            }
+
+            #judul h1 {
+                font-size: 15px;
+            }
+
+            #nav-img {
+                width: 10%;
+            }
+        }
+
+        @media screen and (min-width:769px) and (max-width: 1800px) {
+            #dropdown {
+                visibility: hidden;
+                display: none;
+            }
+
+            #nav-link {
+                display: flex;
+                visibility: visible;
+            }
+
+            #nav-link a {
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            #judul h1 {
+                font-size: 30px;
+            }
+
+
+            #judul h6 {
+                font-size: 20px;
+            }
+
+            #container {
+                height: 25%;
+            }
+        }
+
         :root {
             --main-font: "zen dots", sans-serif;
             --sub-font: "zilla slab", sans-serif;
@@ -21,19 +80,25 @@
     </style>
 </head>
 
-<body>
-    <div id="container" class="bg-gray-300 h-30 content-center px-5 fixed w-full top-0 z-50">
+<body class="">
+    <div id="container" class="bg-gray-300 md:h-22 content-center px-5 fixed w-full top-0 z-50">
         <nav class="flex justify-between">
-            <img src="img/rioh.jpg" class="w-15 md:w-25 rounded-full" alt="">
-            <div class="content-center tracking-[0.2em] font-(family-name:--main-font) text-center">
+            <img src="img/rioh.jpg" class="md:w-35 rounded-full" id="nav-img" alt="">
+            <div id="judul"
+                class="content-center tracking-[0.2em] font-(family-name:--main-font) text-center justify-center items-center pl-[22dvh]">
                 <h1 class="text-sm md:text-2xl">My Portofolio</h1>
                 <h6>By <span class="font-bold text-blue-500 transition duration-600 ease-in-out hover:text-blue-800">Rio
                         Sheva</span></h6>
             </div>
-            <div id="dropdown" class="content-center relative md:hidden">
+            <div id="nav-link" class="relative flex gap-10 items-center text-xl font-(family-name:--atc-font)">
+                <a href="#" class="transition duration-500 ease-in-out hover:text-gray-700">Home</a>
+                <a href="#" class="transition duration-500 ease-in-out hover:text-gray-700">About</a>
+                <a href="#" class="transition duration-500 ease-in-out hover:text-gray-700">Contact</a>
+            </div>
+            <div id="dropdown" class="content-center relative">
                 <div id="dropdown-button" class="flex bg-blue-400 rounded-lg">
-                    <h1 id="menu"
-                        class="font-semibold font-(family-name:--sub-font) tracking-[0.1em] transition duration-500 ease-in-out hover:bg-blue-700 p-3 rounded-lg rounded-r-none">
+                    <h1 id="menu" class="font-semibold font-(family-name:--sub-font) tracking-[0.1em] transition duration-500 ease-in-out hover:bg-blue-700 
+                        content-center px-2 rounded-lg rounded-r-none">
                         MENU INFORMATION
                     </h1>
                     <span id="dropdownButton"
