@@ -13,6 +13,16 @@
         rel="stylesheet">
     <title>Portofolio Tailwind</title>
     <style>
+        .video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
         @media screen and (min-width:320px) and (max-width: 768px) {
             #nav-link {
                 visibility: hidden;
@@ -86,17 +96,25 @@
             --sub-font: "zilla slab", sans-serif;
             --atc-font: "libertinus mono", sans-serif;
         }
+
+        #container-home h2,
+        h4 {
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+        }
     </style>
 </head>
 
-<body class="">
-    <div id="container" class="bg-gray-300 md:h-22 content-center px-5 fixed w-full top-0 z-50">
+<body class="m-0 p-0">
+    <video class="video" autoplay muted loop playsinline>
+        <source src="img/bg-video.mp4" type="video/mp4">
+    </video>
+    <div id="container" class="bg-gray-300/50 md:h-22 content-center px-5 fixed w-full top-0 z-50">
         <nav class="flex justify-between">
-            <img src="img/rioh.jpg" class="md:w-35 rounded-full" id="nav-img" alt="">
+            <img src="img/rioh.jpg" class="md:w-30 rounded-full" id="nav-img" alt="">
             <div id="judul"
-                class="content-center tracking-[0.2em] font-(family-name:--main-font) text-center justify-center items-center ">
+                class="content-center tracking-[0.2em] font-(family-name:--main-font) text-center justify-center items-center">
                 <h1 class="text-sm md:text-2xl">My Portofolio</h1>
-                <h6>By <span class="font-bold text-blue-500 transition duration-600 ease-in-out hover:text-blue-800">Rio
+                <h6>By <span class="font-bold text-blue-800 transition duration-600 ease-in-out hover:text-blue-800">Rio
                         Sheva</span></h6>
             </div>
             <div id="nav-link" class="relative flex gap-6 items-center text-xl font-(family-name:--atc-font)">
@@ -126,6 +144,16 @@
                 </div>
             </div>
         </nav>
+    </div>
+
+    <div id="home" class="flex mt-58 justify-center gap-120">
+        <div id="container-home" class="content-center text-left">
+            <h2 class="font-(family-name:--main-font) text-5xl font-semibold">Hey, I'm Rio
+            </h2>
+            <h4 class="(family-name:--sub-font) text-xl font-medium italic">Web
+                Developer & Web Designer</h4>
+        </div>
+        <img src="img/rioh.jpg" alt="" class="rounded-full border-blue-400/30 border-20 shadow-xl shadow-black w-110">
     </div>
     <script>
         const btn = document.getElementById("dropdownButton");
