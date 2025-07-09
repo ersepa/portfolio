@@ -101,6 +101,10 @@
         h4 {
             text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
         }
+
+        #judul {
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 rgb(43, 43, 43);
+        }
     </style>
 </head>
 
@@ -108,19 +112,21 @@
     <video class="video" autoplay muted loop playsinline>
         <source src="img/bg-video.mp4" type="video/mp4">
     </video>
-    <div id="container" class="bg-gray-300/50 md:h-22 content-center px-5 fixed w-full top-0 z-50">
+    <div id="container" class="bg-gray-800/50 md:h-22 content-center px-5 fixed w-full top-0 z-50">
         <nav class="flex justify-between">
-            <img src="img/rioh.jpg" class="md:w-30 rounded-full" id="nav-img" alt="">
+            <img src="img/rio.jpg" class="md:w-30 rounded-full border-white shadow-xl shadow-black border-4"
+                id="nav-img" alt="">
             <div id="judul"
-                class="content-center tracking-[0.2em] font-(family-name:--main-font) text-center justify-center items-center">
+                class="content-center tracking-[0.2em] font-(family-name:--main-font) text-center justify-center items-center font-extrabold">
                 <h1 class="text-sm md:text-2xl">My Portofolio</h1>
                 <h6>By <span class="font-bold text-blue-800 transition duration-600 ease-in-out hover:text-blue-800">Rio
                         Sheva</span></h6>
             </div>
-            <div id="nav-link" class="relative flex gap-6 items-center text-xl font-(family-name:--atc-font)">
-                <a href="#" class="transition duration-500 ease-in-out hover:text-gray-700">Home</a>
-                <a href="#" class="transition duration-500 ease-in-out hover:text-gray-700"> | About | </a>
-                <a href="#" class="transition duration-500 ease-in-out hover:text-gray-700">Contact</a>
+            <div id="nav-link"
+                class="relative flex gap-14 items-center text-xl font-(family-name:--atc-font) font-extrabold">
+                <a href="#" class="text-white transition duration-500 ease-in-out hover:text-gray-500">Home</a>
+                <a href="#" class="text-white transition duration-500 ease-in-out hover:text-gray-500">About</a>
+                <a href="#" class="text-white transition duration-500 ease-in-out hover:text-gray-500">Contact</a>
             </div>
             <div id="dropdown" class="content-center relative">
                 <div id="dropdown-button" class="flex bg-blue-400 rounded-lg">
@@ -146,14 +152,26 @@
         </nav>
     </div>
 
-    <div id="home" class="flex mt-58 justify-center gap-120">
-        <div id="container-home" class="content-center text-left">
-            <h2 class="font-(family-name:--main-font) text-5xl font-semibold">Hey, I'm Rio
+    <div id="home" class="flex mt-60 justify-center gap-90 rela">
+        <div id="container-home" class="content-center text-left justify-center">
+            <h2 class="font-(family-name:--main-font) text-7xl font-semibold">Hello, I'm <i>Rio</i>
             </h2>
-            <h4 class="(family-name:--sub-font) text-xl font-medium italic">Web
-                Developer & Web Designer</h4>
+            <h4 class="(family-name:--sub-font) text-2xl font-extrabold italic mt-2">Web
+                Developer & Web Designer</h4><br>
+            <hr class="text-white"><br>
+            <h5
+                class="text-gray-400 whitespace-normal break-words w-160 font-semibold text-xl font-(family-name:--atc-font)">
+                Web developer & designer
+                from
+                Jakarta,
+                Indonesia. I create project website
+                like
+                e-commerce web
+                to help
+                businesses do better online.</h5>
         </div>
-        <img src="img/rioh.jpg" alt="" class="rounded-full border-blue-400/30 border-20 shadow-xl shadow-black w-110">
+        <img src="img/rioh.jpg" alt=""
+            class="rounded-full border-blue-400/35 border-12 shadow-xl shadow-gray-700 w-110">
     </div>
     <script>
         const btn = document.getElementById("dropdownButton");
