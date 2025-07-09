@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="img/icon.jpg" type="img/jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libertinus+Mono&family=Zen+Dots&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
@@ -21,6 +22,32 @@
             height: 100%;
             object-fit: cover;
             z-index: -1;
+        }
+
+        @media screen and (max-width:480px) {
+
+            #home {
+                display: block;
+                justify-items: center;
+            }
+
+            #container-home h2,
+            h4,
+            h5 {
+                font-size: 1em;
+                text-align: center;
+            }
+
+            #container-home h5 {
+                font-size: 0.7em;
+            }
+
+            #img-home {
+                height: 13em;
+                width: auto;
+                margin-top: 2em;
+            }
+
         }
 
         @media screen and (min-width:320px) and (max-width: 768px) {
@@ -112,7 +139,8 @@
     <video class="video" autoplay muted loop playsinline>
         <source src="img/bg-video.mp4" type="video/mp4">
     </video>
-    <div id="container" class="bg-gray-800/50 md:h-22 content-center px-5 fixed w-full top-0 z-50">
+    <div id="container" data-aos="fade-down" data-aos-duration="1500"
+        class="bg-gray-800/50 md:h-22 content-center px-5 fixed w-full top-0 z-50">
         <nav class="flex justify-between">
             <img src="img/rio.jpg" class="md:w-30 rounded-full border-white shadow-xl shadow-black border-4"
                 id="nav-img" alt="">
@@ -152,15 +180,16 @@
         </nav>
     </div>
 
-    <div id="home" class="flex mt-60 justify-center gap-90 rela">
-        <div id="container-home" class="content-center text-left justify-center">
-            <h2 class="font-(family-name:--main-font) text-7xl font-semibold">Hello, I'm <i>Rio</i>
+    <div id="home" class="flex mt-30 md:mt-60 justify-center gap-90">
+        <div id="container-home" class="content-center text-left justify-center" data-aos="fade-up-right"
+            data-aos-duration="1500">
+            <h2 class="font-(family-name:--main-font) text-7xl font-semibold ">Hello, I'm <i>Rio</i>
             </h2>
             <h4 class="(family-name:--sub-font) text-2xl font-extrabold italic mt-2">Web
                 Developer & Web Designer</h4><br>
             <hr class="text-white"><br>
             <h5
-                class="text-gray-400 whitespace-normal break-words w-160 font-semibold text-xl font-(family-name:--atc-font)">
+                class="text-gray-400 whitespace-normal break-words w-90 md:w-160 font-semibold text-xl font-(family-name:--atc-font)">
                 Web developer & designer
                 from
                 Jakarta,
@@ -170,8 +199,11 @@
                 to help
                 businesses do better online.</h5>
         </div>
-        <img src="img/rioh.jpg" alt=""
-            class="rounded-full border-blue-400/35 border-12 shadow-xl shadow-gray-700 w-110">
+        <div class="flex">
+            <img id="img-home" src="img/rioh.jpg" alt=""
+                class="rounded-full border-blue-400/35 border-12 shadow-xl shadow-gray-700 w-110"
+                data-aos="fade-up-left" data-aos-duration="1500">
+        </div>
     </div>
     <script>
         const btn = document.getElementById("dropdownButton");
@@ -204,6 +236,10 @@
                 infor.classList.remove("ring-7", "ring-[rgba(30,64,175,0.7)]");
             }
         });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
