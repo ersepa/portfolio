@@ -7,13 +7,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="img/icon.jpg" type="img/jpg">
+    <link rel="icon" href="bootstrap-5.0.2-dist/img/icon.jpg" type="img/jpg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libertinus+Mono&family=Zen+Dots&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <title>Portfolio Rio Sheva</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         .video {
             position: fixed;
             top: 0;
@@ -43,9 +47,8 @@
             }
 
             #img-home {
-                height: 13em;
-                width: auto;
-                margin-top: 2em;
+                visibility: hidden;
+                display: none;
             }
 
         }
@@ -130,7 +133,7 @@
         }
 
         #judul {
-            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 rgb(43, 43, 43);
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
         }
     </style>
 </head>
@@ -141,19 +144,19 @@
     </video>
     <div id="container" data-aos="fade-down" data-aos-duration="1500"
         class="bg-gray-800/50 md:h-22 content-center px-5 fixed w-full top-0 z-50">
-        <nav class="flex justify-between">
+        <nav class="flex justify-between" id="navbar">
             <img src="bootstrap-5.0.2-dist/img/rio.jpg"
                 class="md:w-30 rounded-full border-white shadow-xl shadow-black border-4" id="nav-img" alt="">
             <div id="judul"
                 class="content-center tracking-[0.2em] font-(family-name:--main-font) text-center justify-center items-center font-extrabold">
                 <h1 class="text-sm md:text-2xl">My Portfolio</h1>
-                <h6>By <span class="font-bold text-blue-800 transition duration-600 ease-in-out hover:text-blue-800">Rio
+                <h6>By <span class="font-bold text-blue-400 transition duration-600 ease-in-out hover:text-blue-900">Rio
                         Sheva</span></h6>
             </div>
             <div id="nav-link"
                 class="relative flex gap-14 items-center text-xl font-(family-name:--atc-font) font-extrabold">
                 <a href="#" class="text-white transition duration-500 ease-in-out hover:text-gray-500">Home</a>
-                <a href="#" class="text-white transition duration-500 ease-in-out hover:text-gray-500">About</a>
+                <a href="#about" class="text-white transition duration-500 ease-in-out hover:text-gray-500">About</a>
                 <a href="#" class="text-white transition duration-500 ease-in-out hover:text-gray-500">Contact</a>
             </div>
             <div id="dropdown" class="content-center relative">
@@ -168,10 +171,10 @@
                 <div id="dropdownMenu"
                     class="hidden absolute bg-white mt-1 rounded-lg w-full outline-1 text-center tracking-[0.1em] font-medium">
                     <li class="list-none p-2 font-(family-name:--atc-font) hover:bg-gray-600 rounded-b-none rounded-lg">
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li class="outline font-(family-name:--atc-font) list-none p-2 hover:bg-gray-600"><a
-                            href="#">About</a></li>
+                            href="#about">About</a></li>
                     <li class="font-(family-name:--atc-font) list-none p-2 hover:bg-gray-600 rounded-t-none rounded-lg">
                         <a href="#">Contact</a>
                     </li>
@@ -180,13 +183,13 @@
         </nav>
     </div>
 
-    <div id="home" class="flex mt-40 md:mt-60 justify-center gap-90">
+    <div id="home" class="flex mt-60 md:mt-60 justify-center gap-90">
         <div id="container-home" class="content-center text-left justify-center" data-aos="fade-up-right"
             data-aos-duration="1500">
             <h2 class="font-(family-name:--main-font) text-7xl font-semibold ">Hello, I'm <i>Rio</i>
             </h2>
-            <h4 class="(family-name:--sub-font) text-3xl font-extrabold italic mt-2">Web
-                Developer & Web Designer</h4><br>
+            <h4 class="(family-name:--sub-font) text-3xl font-extrabold italic mt-2">
+                Frontend Developer</h4><br>
             <hr class="text-white"><br>
             <h5
                 class="text-gray-400 whitespace-normal break-words w-75 md:w-160 font-semibold text-xl font-(family-name:--atc-font)">
@@ -204,7 +207,50 @@
                 class="rounded-full border-blue-400/35 border-12 shadow-xl shadow-gray-700 w-110"
                 data-aos="fade-up-left" data-aos-duration="1500">
         </div>
+        <div id="home-button" class="flex gap-18 mt-24 justify-center text-center md:hidden">
+            <button
+                class="font-(family-name:--atc-font) rounded-xl font-extrabold text-sm bg-gradient-to-r from-cyan-400 to-blue-700 inline-block p-2">More
+                Information</button>
+            <button
+                class="font-(family-name:--atc-font) rounded-xl font-extrabold text-sm bg-gradient-to-r from-cyan-400 to-blue-700 inline-block p-2">Contact</button>
+        </div>
     </div>
+    <hr class="text-white mt-24">
+    <div id="about">
+        <div id="about-h1" class="mt-20 text-center">
+            <h1
+                class="tracking-widest font-(family-name:--sub-font) font-bold text-5xl text-center bg-gradient-to-r from-cyan-400 to-blue-700 bg-clip-text text-transparent inline-block">
+                About Me
+            </h1>
+        </div>
+        <div id="about-container" class="mt-19 flex justify-center gap-50">
+            <div id="about-img">
+                <img src="bootstrap-5.0.2-dist/img/icon.jpg" alt="" class="rounded-3xl w-100">
+            </div>
+            <div id="about-isi">
+                <h1 class="text-white text-2xl font-(family-name:--main-font)">I'm <span
+                        class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent inline-block">Rio
+                        Sheva Pratama</span> a Frontend Developer
+                </h1>
+                <h5
+                    class="text-gray-400 whitespace-normal break-words w-75 md:w-220 font-semibold text-md font-(family-name:--atc-font) mt-5">
+                    I specialize in crafting visually stunning and highly interactive user interfaces for the web. With
+                    a passion for
+                    responsive design, performance, and accessibility, I turn ideas into pixel-perfect and functional
+                    experiences using
+                    modern frontend technologies. <br><br>
+
+                    As a recent graduate in web development, I've developed a wide range of projects — from landing
+                    pages to complex web
+                    applications — during my studies and freelance work. I enjoy combining creative design thinking
+                    with
+                    strong technical
+                    skills to build engaging, intuitive, and efficient user experiences.
+                </h5>
+            </div>
+        </div>
+    </div>
+    <p class="mt-50">dnwnfuefu</p>
     <script>
         const btn = document.getElementById("dropdownButton");
         const menu = document.getElementById("dropdownMenu");
