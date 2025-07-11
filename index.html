@@ -54,6 +54,32 @@
                 display: none;
             }
 
+            #about-container {
+                text-align: center;
+                padding-left: 9px;
+            }
+
+            #container-h h1,
+            h5 {
+                text-align: left;
+            }
+
+            #about-h {
+                font-size: 0.7em;
+            }
+
+            #about-isi h1:nth-child(1) {
+                font-size: 0.9em;
+            }
+
+            #about-isi span {
+                font-size: 0.8em;
+            }
+
+            #about-img {
+                padding-left: 4em;
+            }
+
         }
 
         @media screen and (min-width:320px) and (max-width: 768px) {
@@ -220,38 +246,40 @@
         </div>
     </div>
     <span id="about" class="text-transparent">ha</span>
-    <div id="home" class="items-center text-center relative flex-col md:flex">
+    <div id="aboutt" class="relative flex-col md:flex">
         <div id="about-h1" class="mt-45 text-center">
             <h1
                 class="tracking-widest font-(family-name:--sub-font) font-bold text-4xl md:text-5xl text-center bg-gradient-to-r from-cyan-400 to-blue-700 bg-clip-text text-transparent inline-block">
                 About Me
             </h1>
         </div>
-        <div id="about-container"
-            class="mt-17 sm:flex md:flex justify-center flex-wrap content-center items-center text-center gap-50">
+        <div id="about-container" class="mt-17 sm:flex md:flex justify-center flex-wrap gap-50">
             <div id="about-img">
                 <img src="bootstrap-5.0.2-dist/img/icon.jpg" alt=""
                     class="rounded-4xl justify-center content-center items-center h-60 md:h-auto md:w-100">
             </div>
-            <div id="about-isi" class="relative flex-col">
-                <h1 class="text-white text-base md:text-3xl font-(family-name:--main-font)">
+            <div id="about-isi" class="relative flex-col flex">
+                <h1 class=" text-white text-base md:text-3xl font-(family-name:--main-font)">
                     I'm <span
                         class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent inline-block mt-14 md:mt-0">Rio
                         Sheva Pratama</span> a Frontend Developer
                 </h1>
-                <h5
-                    class=" text-gray-400 whitespace-normal break-words w-85 md:w-210 font-extralight md:font-semibold md:text-lg font-(family-name:--atc-font) mt-5">
-                    Hello, my name is Rio Sheva. I was born on 24 April 2007. I'm a Frontend Developer based in
-                    Jakarta, Indonesia. I'm
-                    constantly learning and improving my frontend developer skills every day. <br><br>
+                <div id="about-h" class="flex">
+                    <h5
+                        class=" text-gray-400 whitespace-normal break-words w-95 md:w-210 font-extralight md:font-semibold md:text-lg font-(family-name:--atc-font) mt-5">
+                        Hello, my name is Rio Sheva. I was born on 24 April 2007. I'm a Frontend Developer based in
+                        Jakarta, Indonesia. I'm
+                        constantly learning and improving my frontend developer skills every day. <br><br>
 
-                    I specialize in crafting visually stunning, highly interactive user interfaces for the web and
-                    responsive web in any devices. With
-                    a passion for
-                    responsive design, performance, and accessibility, I turn ideas into pixel-perfect and functional
-                    experiences using
-                    modern frontend technologies.
-                </h5>
+                        I specialize in crafting visually stunning, highly interactive user interfaces for the web and
+                        responsive web in any devices. With
+                        a passion for
+                        responsive design, performance, and accessibility, I turn ideas into pixel-perfect and
+                        functional
+                        experiences using
+                        modern frontend technologies.
+                    </h5>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4 mt-7 md:mt-4 w-full">
                     <h1
                         class="text-base font-(family-name:--sub-font) font-bold text-white flex items-center gap-2 bg-gradient-to-r from-blue-900 p-2 rounded-lg">
@@ -287,7 +315,6 @@
                                 d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
                         </svg>Computer and Network Engineering
                     </h1>
-                    <h1></h1>
                 </div>
             </div>
         </div>
