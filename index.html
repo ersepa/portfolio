@@ -146,13 +146,13 @@
         <source src="bootstrap-5.0.2-dist/img/bg-video.mp4" type="video/mp4">
     </video>
     <div id="container" data-aos="fade-down" data-aos-duration="1500"
-        class="bg-gray-800/50 md:h-22 content-center px-5 fixed w-full top-0 z-50">
+        class="bg-gradient-to-r from-gray-600 to-gray-800 md:h-22 content-center px-7 fixed w-full top-0 z-50">
         <nav class="flex justify-between w-full" id="navbar">
             <img src="bootstrap-5.0.2-dist/img/rio.jpg"
                 class="md:w-30 rounded-full border-white shadow-xl shadow-black border-4" id="nav-img" alt="">
             <div id="judul"
                 class="content-center tracking-[0.2em] font-(family-name:--main-font) text-center justify-center items-center font-extrabold">
-                <h1 class="text-sm md:text-2xl">My Portfolio</h1>
+                <h1 class="text-sm md:text-6xl">My Portfolio</h1>
                 <h6>By <span class="font-bold text-blue-400 transition duration-600 ease-in-out hover:text-blue-900">Rio
                         Sheva</span></h6>
             </div>
@@ -189,7 +189,7 @@
     <div id="home" class="flex mt-60 md:mt-60 justify-center gap-90 text-center content-center items-center">
         <div id="container-home" class="content-center text-left justify-center" data-aos="fade-up"
             data-aos-duration="1500">
-            <h2 class="font-(family-name:--main-font) text-10xl font-extrabold ">Hello, I'm <i>Rio</i>
+            <h2 class="font-(family-name:--main-font) text-6xl font-extrabold ">Hello, I'm <i>Rio</i>
             </h2>
             <h4 class="(family-name:--sub-font) text-3xl font-extrabold italic mt-2">
                 Frontend Developer</h4><br>
@@ -219,43 +219,93 @@
                 data-aos="fade-up-left" data-aos-duration="1500">Contact</button>
         </div>
     </div>
-
-    <!-- <div id="about">
-        <div id="about-h1" class="mt-20 text-center">
+    <span id="about" class="text-transparent">ha</span>
+    <div id="home" class="items-center text-center relative flex-col md:flex">
+        <div id="about-h1" class="mt-45 text-center">
             <h1
-                class="tracking-widest font-(family-name:--sub-font) font-bold text-5xl text-center bg-gradient-to-r from-cyan-400 to-blue-700 bg-clip-text text-transparent inline-block">
+                class="tracking-widest font-(family-name:--sub-font) font-bold text-4xl md:text-5xl text-center bg-gradient-to-r from-cyan-400 to-blue-700 bg-clip-text text-transparent inline-block">
                 About Me
             </h1>
         </div>
-        <div id="about-container" class="mt-19 flex justify-center gap-50">
+        <div id="about-container"
+            class="mt-17 sm:flex md:flex justify-center flex-wrap content-center items-center text-center gap-50">
             <div id="about-img">
-                <img src="bootstrap-5.0.2-dist/img/icon.jpg" alt="" class="rounded-3xl w-100">
+                <img src="bootstrap-5.0.2-dist/img/icon.jpg" alt=""
+                    class="rounded-4xl justify-center content-center items-center h-60 w-full md:h-auto md:w-100">
             </div>
-            <div id="about-isi">
-                <h1 class="text-white text-2xl font-(family-name:--main-font)">I'm <span
-                        class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent inline-block">Rio
+            <div id="about-isi" class="relative flex-col">
+                <h1 class="text-white text-base md:text-3xl font-(family-name:--main-font)">
+                    I'm <span
+                        class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent inline-block mt-14 md:mt-0">Rio
                         Sheva Pratama</span> a Frontend Developer
                 </h1>
                 <h5
-                    class="text-gray-400 whitespace-normal break-words w-75 md:w-220 font-semibold text-md font-(family-name:--atc-font) mt-5">
-                    I specialize in crafting visually stunning and highly interactive user interfaces for the web. With
+                    class=" text-gray-400 whitespace-normal break-words w-95 md:w-210 font-extralight md:font-semibold  md:text-lg font-(family-name:--atc-font) mt-5">
+                    Hello, my name is Rio Sheva. I was born on 24 April 2007. I'm a Frontend Developer based in
+                    Jakarta, Indonesia. I'm
+                    constantly learning and improving my frontend developer skills every day. <br><br>
+
+                    I specialize in crafting visually stunning, highly interactive user interfaces for the web and
+                    responsive web in any devices. With
                     a passion for
                     responsive design, performance, and accessibility, I turn ideas into pixel-perfect and functional
                     experiences using
-                    modern frontend technologies. <br><br>
-
-                    As a recent graduate in web development, I've developed a wide range of projects — from landing
-                    pages to complex web
-                    applications — during my studies and freelance work. I enjoy combining creative design thinking
-                    with
-                    strong technical
-                    skills to build engaging, intuitive, and efficient user experiences.
+                    modern frontend technologies.
                 </h5>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4 mt-7 md:mt-4 w-full">
+                    <h1
+                        class="text-base font-(family-name:--sub-font) font-bold text-white flex items-center gap-2 bg-gradient-to-r from-blue-900 p-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="text-blue-400 bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                        </svg>Jakarta, Indonesia
+                    </h1>
+                    <h1
+                        class="text-base font-(family-name:--sub-font) font-bold text-white flex items-center gap-2 bg-gradient-to-r from-green-900 p-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="text-green-400 bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+                            <path
+                                d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
+                        </svg>riosheva24@gmail.com
+                    </h1>
+                    <h1
+                        class="text-base font-(family-name:--sub-font) font-bold text-white flex items-center gap-2 bg-gradient-to-r from-purple-900 p-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="text-purple-400 bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg>+62 812 9091 2321
+                    </h1>
+                    <h1
+                        class="text-base font-(family-name:--sub-font) font-bold text-white flex items-center gap-2 bg-gradient-to-r from-orange-900 p-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="text-orange-400 bi bi-book-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                        </svg>Computer and Network Engineering
+                    </h1>
+                    <h1></h1>
+                </div>
             </div>
         </div>
     </div>
-    <p class="mt-50">dnwnfuefu</p> -->
+    <p class="mt-50">dnwnfuefu</p>
     <script>
+        let lastScrollY = window.scrollY;
+        const navbar = document.getElementById("container");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > lastScrollY) {
+                navbar.style.transform = "translateY(-100%)";
+            } else {
+                navbar.style.transform = "translateY(0)";
+            }
+            lastScrollY = window.scrollY;
+        });
+
         const btn = document.getElementById("dropdownButton");
         const menu = document.getElementById("dropdownMenu");
         const infor = document.getElementById("menu")
