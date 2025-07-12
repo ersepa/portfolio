@@ -1,0 +1,151 @@
+html {
+  scroll-behavior: smooth;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+@media screen and (max-width: 480px) {
+  #home {
+    display: block;
+    justify-items: center;
+  }
+
+  #container-home h2,
+  h4,
+  h5 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #container-home h5 {
+    font-size: 0.7em;
+  }
+
+  #img-home {
+    visibility: hidden;
+    display: none;
+  }
+
+  #container-h h1,
+  h5 {
+    text-align: left;
+  }
+
+  #about-h {
+    font-size: 0.7em;
+  }
+
+  #about-isi {
+    padding-left: 1dvh;
+  }
+
+  #about-isi h1:nth-child(1) {
+    font-size: 0.9em;
+  }
+
+  #about-isi span {
+    font-size: 0.8em;
+  }
+
+  #about-img {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #nav-link {
+    visibility: hidden;
+    display: none;
+  }
+
+  #container {
+    height: 14dvh;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  #dropdown h1,
+  span {
+    font-size: 10px;
+  }
+
+  #judul {
+    font-size: 10px;
+    padding-left: 0;
+  }
+
+  #judul h1 {
+    font-size: 15px;
+  }
+
+  #nav-img {
+    visibility: hidden;
+    display: none;
+  }
+
+  #dropdownMenu a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1800px) {
+  #dropdown {
+    visibility: hidden;
+    display: none;
+  }
+
+  #nav-link a {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  #judul h1 {
+    font-size: 25px;
+  }
+
+  #judul h6 {
+    font-size: 20px;
+  }
+
+  #container {
+    height: 25%;
+  }
+}
+
+:root {
+  --main-font: "zen dots", sans-serif;
+  --sub-font: "zilla slab", sans-serif;
+  --atc-font: "libertinus mono", sans-serif;
+}
+
+#container-home h2,
+h4 {
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+#judul {
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+#myskill:hover {
+  transform: translateY(-3%);
+}

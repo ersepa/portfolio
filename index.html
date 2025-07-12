@@ -16,160 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libertinus+Mono&family=Zen+Dots&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <title>Portfolio Rio Sheva</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-            max-width: 100vw;
-            box-sizing: border-box;
-            overflow-x: hidden;
-        }
-
-        .video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
-
-        @media screen and (max-width:480px) {
-
-            #home {
-                display: block;
-                justify-items: center;
-            }
-
-            #container-home h2,
-            h4,
-            h5 {
-                font-size: 1em;
-                text-align: center;
-            }
-
-            #container-home h5 {
-                font-size: 0.7em;
-            }
-
-            #img-home {
-                visibility: hidden;
-                display: none;
-            }
-
-
-            #container-h h1,
-            h5 {
-                text-align: left;
-            }
-
-            #about-h {
-                font-size: 0.7em;
-            }
-
-            #about-isi {
-                padding-left: 1dvh;
-            }
-
-            #about-isi h1:nth-child(1) {
-                font-size: 0.9em;
-            }
-
-            #about-isi span {
-                font-size: 0.8em;
-            }
-
-            #about-img {
-                text-align: center;
-                display: flex;
-                justify-content: center;
-            }
-
-        }
-
-        @media screen and (min-width:320px) and (max-width: 768px) {
-            #nav-link {
-                visibility: hidden;
-                display: none;
-            }
-
-            #container {
-                height: 14dvh;
-                justify-content: center;
-                text-align: center;
-                align-content: center;
-            }
-
-            nav {
-                justify-content: space-between;
-            }
-
-            #dropdown h1,
-            span {
-                font-size: 10px;
-            }
-
-
-            #judul {
-                font-size: 10px;
-                padding-left: 0;
-            }
-
-            #judul h1 {
-                font-size: 15px;
-            }
-
-            #nav-img {
-                visibility: hidden;
-                display: none;
-            }
-
-            #dropdownMenu a {
-                font-size: 12px;
-            }
-        }
-
-        @media screen and (min-width:769px) and (max-width: 1800px) {
-            #dropdown {
-                visibility: hidden;
-                display: none;
-            }
-
-
-            #nav-link a {
-                font-size: 22px;
-                font-weight: bold;
-            }
-
-            #judul h1 {
-                font-size: 25px;
-            }
-
-
-            #judul h6 {
-                font-size: 20px;
-            }
-
-            #container {
-                height: 25%;
-            }
-        }
-
-        :root {
-            --main-font: "zen dots", sans-serif;
-            --sub-font: "zilla slab", sans-serif;
-            --atc-font: "libertinus mono", sans-serif;
-        }
-
-        #container-home h2,
-        h4 {
-            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-        }
-
-        #judul {
-            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body class="m-0 p-0 overflow-hidden max-w-screen overflow-x-hidden">
@@ -347,12 +194,13 @@
             </div>
         </div>
     </div>
-    <div class="bg-gray-900 py-10" data-aos="fade-down" data-aos-duration="1500">
+    <div id="skill" class="bg-gray-900 py-10" data-aos="fade-down" data-aos-duration="1500">
         <h1 class="text-center text-white font-(family-name:--main-font) text-3xl" data-aos="fade-in"
             data-aos-duration="1500">What I Can Do?</h1>
         <div id="skills" class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-19 mt-10 md:px-40 px-10"
             data-aos="fade-in" data-aos-duration="1000">
-            <div class="text-center place-items-center border-2 border-gray-700 bg-gray-800 py-8 font-(family-name:--main-font) text-white hover:shadow-xl shadow-cyan-700 font-bold"
+            <div id="myskill"
+                class="text-center place-items-center border-2 border-gray-700 bg-gray-800 py-8 font-(family-name:--main-font) text-white hover:shadow-xl shadow-cyan-700 font-bold"
                 data-aos="fade-up" data-aos-duration="2000">
                 <img src="bootstrap-5.0.2-dist/img/html5-brands.svg" class="w-30 mb-2" alt="">HMTL <p
                     class="mt-4 font-(family-name:--atc-font) max-w-[80%] font-semibold text-gray-400">I can create a
@@ -360,14 +208,16 @@
                     complicated structure website</p>
                 <hr>
             </div>
-            <div class="text-center place-items-center border-2 border-gray-700 bg-gray-800 py-8 font-(family-name:--main-font) text-white hover:shadow-xl shadow-cyan-700 font-bold"
+            <div id="myskill"
+                class="text-center place-items-center border-2 border-gray-700 bg-gray-800 py-8 font-(family-name:--main-font) text-white hover:shadow-xl shadow-cyan-700 font-bold"
                 data-aos="fade-up" data-aos-duration="2000">
                 <img src="bootstrap-5.0.2-dist/img/css3-alt-brands.svg" class="w-30 mb-2" alt="">CSS <p
                     class="mt-4 font-(family-name:--atc-font) max-w-[80%] font-semibold text-gray-400">I can make the
                     beutifull and responsive website</p>
                 <hr>
             </div>
-            <div class="text-center place-items-center border-2 border-gray-700 bg-gray-800 py-8 font-(family-name:--main-font) text-white hover:shadow-xl shadow-cyan-700 font-bold"
+            <div id="myskill"
+                class="text-center place-items-center border-2 border-gray-700 bg-gray-800 py-8 font-(family-name:--main-font) text-white hover:shadow-xl shadow-cyan-700 font-bold"
                 data-aos="fade-up" data-aos-duration="2000">
                 <img src="bootstrap-5.0.2-dist/img/square-js-brands.svg" class="w-30 mb-2" alt="">JavaScript <p
                     class="mt-4 font-(family-name:--atc-font) max-w-[80%] font-semibold text-gray-400">I can make the
@@ -377,51 +227,7 @@
                 <hr>
             </div>
         </div>
-
-        <script>
-            let lastScrollY = window.scrollY;
-            const navbar = document.getElementById("container");
-
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > lastScrollY) {
-                    navbar.style.transform = "translateY(-100%)";
-                } else {
-                    navbar.style.transform = "translateY(0)";
-                }
-                lastScrollY = window.scrollY;
-            });
-
-            const btn = document.getElementById("dropdownButton");
-            const menu = document.getElementById("dropdownMenu");
-            const infor = document.getElementById("menu")
-
-            btn.addEventListener("click", () => {
-                menu.classList.toggle("hidden");
-                btn.classList.toggle("ring-7");
-                btn.classList.toggle("ring-[rgba(30,64,175,0.7)]");
-
-            });
-
-            infor.addEventListener("click", () => {
-                infor.classList.toggle("ring-7");
-                infor.classList.toggle("ring-[rgba(30,64,175,0.7)]");
-            })
-
-            document.addEventListener("click", function (e) {
-                if (!btn.contains(e.target)
-                    && !menu.contains(e.target)) {
-                    menu.classList.add("hidden");
-                    btn.classList.remove("ring-7", "ring-[rgba(30,64,175,0.7)]");
-                }
-            });
-
-            document.addEventListener("click", function (e) {
-                if (!infor.contains(e.target)
-                    && !menu.contains(e.target)) {
-                    infor.classList.remove("ring-7", "ring-[rgba(30,64,175,0.7)]");
-                }
-            });
-        </script>
+        <script src="index.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
