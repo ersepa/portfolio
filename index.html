@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/your-path-to-fontawesome/js/sharp-solid.js"></script>
+    <script defer src="/your-path-to-fontawesome/js/custom-icons.js"></script>
+    <script defer src="/your-path-to-fontawesome/js/fontawesome.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -247,21 +250,22 @@
                 data-aos="fade-up-left" data-aos-duration="1500">Contact</button>
         </div>
     </div>
-    <div id="about" class="relative flex-col mt-75 md:flex">
+    <div id="about" class="relative flex-col mt-75 md:flex bg-slate-950 py-15" data-aos="fade-down"
+        data-aos-duration="1000">
         <div id="about-h1" class=" text-center">
-            <h1 class="tracking-widest font-(family-name:--sub-font) font-bold text-4xl md:text-5xl text-center bg-gradient-to-r from-cyan-400 to-blue-700 bg-clip-text text-transparent inline-block"
+            <h1 class="tracking-widest font-(family-name:--main-font) font-bold text-4xl md:text-5xl text-center bg-gradient-to-r from-cyan-400 to-blue-700 bg-clip-text text-transparent inline-block"
                 data-aos="fade-in" data-aos-duration="1500">
                 About Me
             </h1>
         </div>
-        <div id="about-container" class="mt-10 md:mt-20 sm:flex md:flex justify-center flex-wrap gap-50">
+        <div id="about-container" class="mt-10 md:mt-15 sm:flex md:flex justify-center flex-wrap gap-50">
             <div id="about-img">
                 <img src="bootstrap-5.0.2-dist/img/rioh.jpg" alt=""
                     class="rounded-4xl justify-center content-center items-center h-60 md:h-auto md:w-100 border-blue-500/35 border-7 md:border-12 shadow-xl shadow-gray-700"
                     data-aos="fade-right" data-aos-duration="1500">
             </div>
             <div id="about-isi" class="relative flex-col flex">
-                <h1 class=" text-white text-base md:text-3xl font-(family-name:--main-font)" data-aos="zoom-in"
+                <h1 class=" text-white text-base md:text-3xl font-(family-name:--sub-font)" data-aos="zoom-in"
                     data-aos-duration="1500">
                     I'm <span
                         class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent inline-block mt-14 md:mt-0">Rio
@@ -324,7 +328,7 @@
                 </div>
                 <div class="flex justify-center mt-8 gap-8">
                     <button
-                        class="bg-white justify-center items-center flex w-1/3 md:w-1/4 gap-3 bg-gradient-to-r from-blue-900 to-purple-800 py-1 rounded-xl text-white"
+                        class="bg-white justify-center items-center flex w-1/2 md:w-1/4 gap-3 bg-gradient-to-r from-blue-900 to-purple-800 py-1 rounded-xl text-white font-(family-name:--atc-font) font-semibold"
                         data-aos="fade-up-right" data-aos-duration="1500"><svg xmlns="http://www.w3.org/2000/svg"
                             width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
                             <path
@@ -333,7 +337,7 @@
                                 d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
                         </svg>Download CV</button>
                     <button
-                        class="bg-white justify-center items-center flex w-1/3 md:w-1/4 gap-3 bg-gradient-to-r from-green-400 to-green-900 py-1 rounded-xl text-white"
+                        class="bg-white justify-center items-center flex w-1/3 md:w-1/4 gap-3 bg-gradient-to-r from-green-400 to-green-900 py-1 rounded-xl text-white font-(family-name:--atc-font) font-semibold"
                         data-aos="fade-up-left" data-aos-duration="1500"><svg xmlns="http://www.w3.org/2000/svg"
                             width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
                             <path
@@ -343,55 +347,84 @@
             </div>
         </div>
     </div>
-    <p class="mt-50">dnwnfuefu</p>
-    <script>
-        let lastScrollY = window.scrollY;
-        const navbar = document.getElementById("container");
+    <div class="bg-gray-900 py-10" data-aos="fade-down" data-aos-duration="1500">
+        <h1 class="text-center text-white font-(family-name:--main-font) text-3xl" data-aos="fade-in"
+            data-aos-duration="1500">What I Can Do?</h1>
+        <div id="skills" class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-19 mt-10 md:px-40 px-10"
+            data-aos="fade-in" data-aos-duration="1000">
+            <div class="text-center place-items-center border-2 border-gray-700 bg-gray-800 py-8 font-(family-name:--main-font) text-white hover:shadow-xl shadow-cyan-700 transition duration-400 ease-in-out font-bold"
+                data-aos="fade-up" data-aos-duration="2000">
+                <img src="bootstrap-5.0.2-dist/img/html5-brands.svg" class="w-30 mb-2" alt="">HMTL <p
+                    class="mt-4 font-(family-name:--atc-font) w-80 font-semibold text-gray-400">I can create a
+                    simple and
+                    complicated structure website</p>
+                <hr>
+            </div>
+            <div class="text-center place-items-center border-2 border-gray-700 bg-gray-800 py-8 font-(family-name:--main-font) text-white hover:shadow-xl shadow-cyan-700 transition duration-400 ease-in-out font-bold"
+                data-aos="fade-up" data-aos-duration="2000">
+                <img src="bootstrap-5.0.2-dist/img/css3-alt-brands.svg" class="w-30 mb-2" alt="">CSS <p
+                    class="mt-4 font-(family-name:--atc-font) w-80 font-semibold text-gray-400">I can make the
+                    beutifull and responsive website</p>
+                <hr>
+            </div>
+            <div class="text-center place-items-center border-2 border-gray-700 bg-gray-800 py-8 font-(family-name:--main-font) text-white hover:shadow-xl shadow-cyan-700 transition duration-400 ease-in-out font-bold"
+                data-aos="fade-up" data-aos-duration="2000">
+                <img src="bootstrap-5.0.2-dist/img/square-js-brands.svg" class="w-30 mb-2" alt="">JavaScript <p
+                    class="mt-4 font-(family-name:--atc-font) w-80 font-semibold text-gray-400">I can make the website
+                    more
+                    interactive for user experiance</p>
+                <hr>
+            </div>
+        </div>
 
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > lastScrollY) {
-                navbar.style.transform = "translateY(-100%)";
-            } else {
-                navbar.style.transform = "translateY(0)";
-            }
-            lastScrollY = window.scrollY;
-        });
+        <script>
+            let lastScrollY = window.scrollY;
+            const navbar = document.getElementById("container");
 
-        const btn = document.getElementById("dropdownButton");
-        const menu = document.getElementById("dropdownMenu");
-        const infor = document.getElementById("menu")
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > lastScrollY) {
+                    navbar.style.transform = "translateY(-100%)";
+                } else {
+                    navbar.style.transform = "translateY(0)";
+                }
+                lastScrollY = window.scrollY;
+            });
 
-        btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-            btn.classList.toggle("ring-7");
-            btn.classList.toggle("ring-[rgba(30,64,175,0.7)]");
+            const btn = document.getElementById("dropdownButton");
+            const menu = document.getElementById("dropdownMenu");
+            const infor = document.getElementById("menu")
 
-        });
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+                btn.classList.toggle("ring-7");
+                btn.classList.toggle("ring-[rgba(30,64,175,0.7)]");
 
-        infor.addEventListener("click", () => {
-            infor.classList.toggle("ring-7");
-            infor.classList.toggle("ring-[rgba(30,64,175,0.7)]");
-        })
+            });
 
-        document.addEventListener("click", function (e) {
-            if (!btn.contains(e.target)
-                && !menu.contains(e.target)) {
-                menu.classList.add("hidden");
-                btn.classList.remove("ring-7", "ring-[rgba(30,64,175,0.7)]");
-            }
-        });
+            infor.addEventListener("click", () => {
+                infor.classList.toggle("ring-7");
+                infor.classList.toggle("ring-[rgba(30,64,175,0.7)]");
+            })
 
-        document.addEventListener("click", function (e) {
-            if (!infor.contains(e.target)
-                && !menu.contains(e.target)) {
-                infor.classList.remove("ring-7", "ring-[rgba(30,64,175,0.7)]");
-            }
-        });
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+            document.addEventListener("click", function (e) {
+                if (!btn.contains(e.target)
+                    && !menu.contains(e.target)) {
+                    menu.classList.add("hidden");
+                    btn.classList.remove("ring-7", "ring-[rgba(30,64,175,0.7)]");
+                }
+            });
+
+            document.addEventListener("click", function (e) {
+                if (!infor.contains(e.target)
+                    && !menu.contains(e.target)) {
+                    infor.classList.remove("ring-7", "ring-[rgba(30,64,175,0.7)]");
+                }
+            });
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>
