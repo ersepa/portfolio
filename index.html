@@ -17,6 +17,9 @@
         rel="stylesheet">
     <title>Portfolio Rio Sheva</title>
     <link rel="stylesheet" href="index.css">
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.22.4/dist/sweetalert2.min.css
+    " rel="stylesheet">
 </head>
 
 <body class="m-0 p-0 overflow-hidden max-w-screen overflow-x-hidden">
@@ -67,7 +70,8 @@
     <div id="home" class="flex mt-65 md:mt-60 justify-center gap-90 text-center content-center items-center">
         <div id="container-home" class="content-center text-left justify-center" data-aos="fade-up"
             data-aos-duration="1500">
-            <h2 class="font-(family-name:--main-font) text-6xl font-extrabold ">Hello, I'm <i>Rio</i>
+            <h2 class="font-(family-name:--main-font) text-6xl font-extrabold ">Hello <span id="namaUser"></span>, I'm
+                <i>Rio</i>
             </h2>
             <h4 class="(family-name:--sub-font) text-3xl font-extrabold italic mt-2">
                 Frontend Developer</h4><br>
@@ -254,6 +258,13 @@
             </div>
             <div id="myachiv" data-aos="fade-up" data-aos-duration="2000">
                 <h1 class="font-(family-name:--main-font) text-white pb-3 text-xl font-bold tracking-widest">
+                    Konsep Pemrograman</h1>
+                <a href="https://drive.google.com/file/d/16fF1kWL_sOqlKauA_AOX2t5F9aLQJHsK/view?usp=sharing">
+                    <img src="bootstrap-5.0.2-dist/img/KonsepPemrograman.png" class="w-150 border-2 border-black"
+                        alt=""></a>
+            </div>
+            <div id="myachiv" data-aos="fade-up" data-aos-duration="2000">
+                <h1 class="font-(family-name:--main-font) text-white pb-3 text-xl font-bold tracking-widest">
                     Data Analysis Fundamental</h1>
                 <a href="https://drive.google.com/file/d/15ll2OaLNL3FduTZYy4vE1JVGn1ufCSCD/view?usp=sharing">
                     <img src="bootstrap-5.0.2-dist/img/DataFundamental.jpg" class="w-150 border-2 border-black"
@@ -265,9 +276,20 @@
                 <a href="https://drive.google.com/file/d/1qofSfphlTPJlFyxu8jwqQpr5699WO_EG/view?usp=sharing">
                     <img src="bootstrap-5.0.2-dist/img/phising.png" class="w-150 border-2 border-black" alt=""></a>
             </div>
+            <div id="myachiv" data-aos="fade-up" data-aos-duration="2000">
+                <h1 class="font-(family-name:--main-font) text-white pb-3 text-xl font-bold tracking-widest">
+                    Cybersecurity</h1>
+                <a href="https://drive.google.com/file/d/1YP6i9qN0NI7sfMoc3ih7P2OfUsR_zCRT/view?usp=sharing">
+                    <img src="bootstrap-5.0.2-dist/img/Cybersecurity.jpg" class="w-150 border-2 border-black"
+                        alt=""></a>
+            </div>
         </div>
         <script src="index.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="
+        https://cdn.jsdelivr.net/npm/sweetalert2@11.22.4/dist/sweetalert2.all.min.js
+        "></script>
+
         <script>
             AOS.init();
         </script>

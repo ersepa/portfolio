@@ -1,3 +1,5 @@
+// Scroll down navbar
+
 let lastScrollY = window.scrollY;
 const navbar = document.getElementById("container");
 
@@ -9,6 +11,8 @@ window.addEventListener("scroll", () => {
   }
   lastScrollY = window.scrollY;
 });
+
+// Drowdown button
 
 const btn = document.getElementById("dropdownButton");
 const menu = document.getElementById("dropdownMenu");
@@ -37,3 +41,27 @@ document.addEventListener("click", function (e) {
     infor.classList.remove("ring-7", "ring-[rgba(30,64,175,0.7)]");
   }
 });
+
+// Alert
+
+(async () => {
+  const ipAPI = "//api.ipify.org?format=json";
+  const response = await fetch(ipAPI);
+  const data = await response.json();
+  const { value: ipAddress } = await Swal.fire({
+    title: "Enter your name here",
+    input: "text",
+    inputLabel: "Your name",
+    allowOutsideClick: false,
+    allowEscapeKey: false,
+    inputValidator: (value) => {
+      if (!value) {
+        return "You need to write something!";
+      }
+    },
+  });
+  if (ipAddress) {
+    Swal.fire(`Welcome to my portfolio ${ipAddress}`);
+    document.getElementById("namaUser").innerText = ipAddress;
+  }
+})();
